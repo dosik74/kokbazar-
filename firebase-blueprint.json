@@ -1,0 +1,139 @@
+{
+  "projectID": "gen-lang-client-0778799666",
+  "collections": [
+    {
+      "collectionId": "users",
+      "documents": []
+    },
+    {
+      "collectionId": "categories",
+      "documents": [
+        {
+          "documentId": "basic_veggies",
+          "data": { "name": "Базовые овощи", "name_kz": "Негізгі көкөністер", "sort_weight": 10 }
+        },
+        {
+          "documentId": "fresh_greens",
+          "data": { "name": "Свежая зелень", "name_kz": "Жаңа піскен шөптер", "sort_weight": 20 }
+        },
+        {
+          "documentId": "exotics",
+          "data": { "name": "Экзотика", "name_kz": "Экзотикалық", "sort_weight": 30 }
+        },
+        {
+          "documentId": "seasonal_fruits",
+          "data": { "name": "Сезонные фрукты", "name_kz": "Маусымдық жемістер", "sort_weight": 40 }
+        },
+        {
+          "documentId": "vacuum_pack",
+          "data": { "name": "Вакуумная продукция", "name_kz": "Вакуумдық өнімдер", "sort_weight": 50 }
+        }
+      ]
+    },
+    {
+      "collectionId": "products",
+      "documents": [
+        {
+          "documentId": "tomato",
+          "data": {
+            "name": "Помидоры тепличные",
+            "name_kz": "Қызанақ",
+            "category_id": "basic_veggies",
+            "base_price": 550,
+            "unit": "кг",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": ["хит", "новинка"],
+            "season_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "sort_weight": 100,
+            "image_url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&auto=format&fit=crop"
+          }
+        },
+        {
+          "documentId": "cucumber",
+          "data": {
+            "name": "Огурцы Миринда",
+            "name_kz": "Қияр",
+            "category_id": "basic_veggies",
+            "base_price": 450,
+            "unit": "кг",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": ["хит"],
+            "season_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "sort_weight": 90,
+            "image_url": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&auto=format&fit=crop"
+          }
+        },
+        {
+          "documentId": "microgreens_pea",
+          "data": {
+            "name": "Микрозелень: Горох",
+            "name_kz": "Микрожасыл: Бұршақ",
+            "category_id": "fresh_greens",
+            "base_price": 1200,
+            "unit": "лоток",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": ["акция"],
+            "season_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "sort_weight": 110,
+            "image_url": "https://images.unsplash.com/photo-1594964645228-3e47a2fb60a1?w=800&auto=format&fit=crop"
+          }
+        },
+        {
+          "documentId": "mango",
+          "data": {
+            "name": "Манго спелое",
+            "name_kz": "Манго",
+            "category_id": "exotics",
+            "base_price": 4500,
+            "unit": "кг",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": [],
+            "season_months": [1, 2, 3, 4, 11, 12],
+            "sort_weight": 80,
+            "image_url": "https://images.unsplash.com/photo-1553278939-2b0e9f456185?w=800&auto=format&fit=crop"
+          }
+        },
+        {
+          "documentId": "watermelon",
+          "data": {
+            "name": "Арбуз Астраханский",
+            "name_kz": "Қарбыз",
+            "category_id": "seasonal_fruits",
+            "base_price": 200,
+            "unit": "кг",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": ["сезонка"],
+            "season_months": [6, 7, 8, 9],
+            "sort_weight": 120,
+            "image_url": "https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?w=800&auto=format&fit=crop"
+          }
+        },
+        {
+          "documentId": "vacuum_potato",
+          "data": {
+            "name": "Картофель очищенный в вакууме",
+            "name_kz": "Вакуумдағы картоп",
+            "category_id": "vacuum_pack",
+            "base_price": 450,
+            "unit": "кг",
+            "is_available": true,
+            "stock_status": "в наличии",
+            "tags": ["удобно"],
+            "season_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "sort_weight": 150,
+            "image_url": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&auto=format&fit=crop"
+          }
+        }
+      ]
+    },
+    {
+      "collectionId": "orders",
+      "documents": []
+    }
+  ]
+}
