@@ -1,6 +1,37 @@
 import { collection, getDocs, doc, setDoc, getDoc, query, where, orderBy, addDoc, updateDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
+// Blueprint for initial database setup
+const blueprint = {
+  collections: [
+    {
+      collectionId: "users",
+      documents: []
+    },
+    {
+      collectionId: "categories",
+      documents: [
+        {
+          documentId: "basic_veggies",
+          data: { name: "Базовые овощи", name_kz: "Негізгі көкөністер", sort_weight: 10 }
+        },
+        {
+          documentId: "fresh_greens",
+          data: { name: "Свежая зелень", name_kz: "Жаңа піскен шөптер", sort_weight: 20 }
+        },
+        {
+          documentId: "exotics",
+          data: { name: "Экзотика", name_kz: "Экзотикалық", sort_weight: 30 }
+        },
+        {
+          documentId: "seasonal_fruits",
+          data: { name: "Сезонные фрукты", name_kz: "Маусымдық жемістер", sort_weight: 40 }
+        }
+      ]
+    }
+  ]
+};
+
 export interface Category {
   id: string;
   name: string;
